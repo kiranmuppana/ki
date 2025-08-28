@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Birthday Gallery</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #fef6f6;
+    padding: 20px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+.gallery img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+</style>
+</head>
+<body>
+<h1>🎉 Happy Birthday Memories 🎉</h1>
+<div class="gallery">
+    <img src="images/photo1.jpg" alt="Memory 1">
+    <img src="images/photo2.jpg" alt="Memory 2">
+    <img src="images/photo3.jpg" alt="Memory 3">
+    <img src="images/photo4.jpg" alt="Memory 4">
+</div>
+</body>
+</html>
